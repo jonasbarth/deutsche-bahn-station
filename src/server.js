@@ -34,6 +34,6 @@ function getStation(call, callback) {
     callback(null, findStation(call.request.eva));
 }
 
-stationServer.bindAsync('0.0.0.0:50051', grpc.ServerCredentials.createInsecure(), () => {
+stationServer.bindAsync('localhost:50051', grpc.ServerCredentials.createInsecure(), () => {
     stationServer.start();
 });
