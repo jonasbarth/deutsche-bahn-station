@@ -1,0 +1,5 @@
+{
+	"database": {
+		"url": "mongodb://mongoservice:27017/"
+	}
+}

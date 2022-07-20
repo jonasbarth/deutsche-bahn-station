@@ -1,0 +1,35 @@
+{
+  "name": "deutsche-bahn-station",
+  "version": "1.0.0",
+  "description": "A GRPC API for exposing Deutsche Bahn Station data",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonasbarth/deutsche-bahn-station.git"
+  },
+  "keywords": [
+    "deutsche",
+    "bahn",
+    "api",
+    "server",
+    "grpc",
+    "station"
+  ],
+  "author": "jobarth",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.6.7",
+    "@grpc/proto-loader": "^0.6.13",
+    "google-protobuf": "^3.20.1",
+    "mongodb": "^4.8.0",
+    "winston": "^3.8.1",
+    "config": "^3.3.7"
+  },
+  "bugs": {
+    "url": "https://github.com/jonasbarth/deutsche-bahn-station/issues"
+  },
+  "homepage": "https://github.com/jonasbarth/deutsche-bahn-station#readme"
+}

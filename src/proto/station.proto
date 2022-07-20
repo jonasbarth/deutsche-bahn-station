@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+service StationService {
+  rpc getStation(EvaRequest) returns (StationResponse) {}
+}
+
+message EvaRequest {
+  string eva = 1;
+}
+
+message StationResponse {
+  string eva = 1;
+  string stationName = 2;
+  string ds100 = 3;
+  string ifopt = 4;
+  string trafficType = 5;
+  double longitude = 6;
+  double latitude = 7;
+  string operatorName = 8;
+  string operatorNumber = 9;
+  string status = 10;
+}
