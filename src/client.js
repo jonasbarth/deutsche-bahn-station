@@ -16,15 +16,17 @@ var packageDefinition = protoLoader.loadSync(
 
 var protoDescriptor = grpc.loadPackageDefinition(packageDefinition)
 
-var client = new protoDescriptor.StationService('0.0.0.0:50051', grpc.credentials.createInsecure());
+var client = new protoDescriptor.StationService('localhost:6000', grpc.credentials.createInsecure());
 
 var request = {eva: "8002549"}
 
 client.getStation(request, function(err, feature) {
     if (err) {
       // process error
+      console.error("There has been an error");
       console.error(err);
     } else {
+        console.log("Got feature");
       // process feature
       console.log(feature);
     }
