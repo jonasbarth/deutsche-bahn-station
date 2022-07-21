@@ -17,8 +17,8 @@ MongoClient.connect(url, function(err, db) {
     if (err) throw err;
 
     var dbo = db.db("deutsche-bahn");
-    console.log(stations)
-    dbo.collection("station").insertMany(getAllStations(), function(err, res) {
+    let stations = getAllStations();
+    dbo.collection("station").insertMany(stations, function(err, res) {
         if (err) throw err;
         console.log(`${stations.length} documents inserted`);
         db.close();
