@@ -10,7 +10,7 @@ function findStation(eva) {
         var dbo = db.db("deutsche-bahn");
         var query = { eva: eva };
 
-        dbo.collection("station").find(query, function(err, result) {
+        dbo.collection("station").find(query).toArray(function(err, result) {
             if (err) throw err;
             console.log(result);
             db.close();
