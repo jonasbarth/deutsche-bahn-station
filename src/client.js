@@ -31,23 +31,3 @@ client.getStation(request, function(err, feature) {
       console.log(feature);
     }
   });
-
-/*
-console.log(`Sending ${JSON.stringify(request)} to ${url}`)
-var call = client.getDepartedAfter(request);
-call.on('data', function(response) {
-    console.log(`Got ${JSON.stringify(response)}`);
-    responses.push(response);
-});
-call.on('error', (err) => {
-    console.error(err);
-});
-call.on('end', () => {
-    console.log("Ending response");
-    if (responses.length != 0) {
-        for (let stop in responses) {
-            console.log(stop);
-        }
-    }
-})
-*/
