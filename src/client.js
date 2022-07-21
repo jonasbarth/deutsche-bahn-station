@@ -18,7 +18,7 @@ var protoDescriptor = grpc.loadPackageDefinition(packageDefinition)
 
 var client = new protoDescriptor.StationService('localhost:6000', grpc.credentials.createInsecure());
 
-var request = {eva: "8002549"}
+var request = {eva: 8002549}
 
 client.getStation(request, function(err, feature) {
     if (err) {
