@@ -12,7 +12,7 @@ function findStation(eva) {
 
         dbo.collection("station").find(query).toArray(function(err, result) {
             if (err) throw err;
-            console.log(result);
+            console.log(`Found ${result} for ${eva}`);
             db.close();
             return result;
         });
