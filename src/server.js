@@ -31,7 +31,7 @@ stationServer.addService(StationService.service, {
  * @param {function(Error, feature)} callback Response callback
  */
 function getStation(call, callback) {
-    callback(null, findStation(call.request.eva));
+    findStation(call.request.eva, callback);
 }
 
 stationServer.bindAsync('localhost:6000', grpc.ServerCredentials.createInsecure(), () => {
