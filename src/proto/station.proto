@@ -9,7 +9,7 @@ message EvaRequest {
 }
 
 message StationResponse {
-  string eva = 1;
+  int32 eva = 1;
   string stationName = 2;
   string ds100 = 3;
   string ifopt = 4;
