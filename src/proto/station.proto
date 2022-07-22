@@ -10,7 +10,7 @@ message EvaRequest {
 
 message StationResponse {
   int32 eva = 1;
-  string stationName = 2;
+  string name = 2;
   string ds100 = 3;
   string ifopt = 4;
   string trafficType = 5;
